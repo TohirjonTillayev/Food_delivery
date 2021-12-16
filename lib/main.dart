@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: FoodApp(),
       title: "Food Delivery App",
@@ -31,9 +31,6 @@ class _FoodAppState extends State<FoodApp> {
     return SafeArea(
         child: PageView(children: [
       MyPage(),
-     
     ]));
   }
 }
-
-
