@@ -28,6 +28,12 @@ class FoodApp extends StatefulWidget {
 class _FoodAppState extends State<FoodApp> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: MyPage());
+    return SafeArea(
+        child: PageView(children: [
+      MyPage(),
+     
+    ]));
   }
 }
+
+

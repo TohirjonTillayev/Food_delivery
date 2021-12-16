@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 class MyPage extends StatelessWidget {
   MyPage({Key? key}) : super(key: key);
   final PageController _controller = PageController();
@@ -279,7 +281,7 @@ class MyPage extends StatelessWidget {
                           splashColor: Colors.amber,
                           onTap: () {
                             if (_controller.hasClients) {
-                              _controller.animateToPage(0,
+                              _controller.animateToPage(3,
                                   duration: const Duration(milliseconds: 200),
                                   curve: Curves.easeInOut);
                             }
@@ -293,10 +295,11 @@ class MyPage extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),
+        HomePage(),
       ],
     ));
   }
